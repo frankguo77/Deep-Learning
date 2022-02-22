@@ -37,10 +37,10 @@ The archtecture of STN
 
 Let's see the three parts one by one.
 ## Localization network
-Find affine matrix $A_\theta$: $\theta_{11}$ ~ $\theta_{23}$.
+Find affine matrix $$A_\theta$$: $$\theta_{11}$ ~ $\theta_{23}$$.
  
-Input: $U \in R^{H \times W \times C}$  
-Output: $\theta \in R^{2 \times 3}$ (2D) or $\theta \in R^{3 \times 4}$ (3D)
+Input: $$U \in R^{H \times W \times C}$$  
+Output: $$\theta \in R^{2 \times 3}$ (2D) or $\theta \in R^{3 \times 4}$$ (3D)
 
 
 ## Grid generator

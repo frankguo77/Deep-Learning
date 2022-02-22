@@ -89,5 +89,5 @@ STN operation:
 
         return x
 ```
-F.affine_grid do affine transform and outputs: $(N \times H \times W \times 2)$.
+F.affine_grid do affine transform and outputs: $$(N \times H \times W \times 2)$$.
 F.grid_sample do interpolation.

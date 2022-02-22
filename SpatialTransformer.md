@@ -30,16 +30,18 @@ The archtecture of STN
 <p align="center">
 ![logo](https://pytorch.org/tutorials/_images/stn-arch.png "STN")
 </p>
-*The ocalization Network(regular CNN)
-*The grid generator
-*The sampler
+-The ocalization Network(regular CNN)
+-The grid generator
+-The sampler
 
 Let's see the three parts one by one.
 ## Localization network
-find affine matrix A_\theta. \theta_{11} ~ \theta_{23}.
+Find affine matrix $A_\theta$. $\theta_{11}$ ~ $\theta_{23}$.
  
 
-The input of the localisation net is a feature map: $U \in R^{HXWXC}$ 。经过若干卷积或全链接操作后接一个回归层回归输出变换参数θ。θ的维度取决于网络选择的具体变换类型,如选择仿射变换则 [公式] 。如选择投影变换则 [公式] 。θ的值决定了网络选择的空间变换的”幅度大小”。
+Input: $U \in R^{HXWXC}$  
+Output:
+
 
 ## Grid generator
 Do the matrix product to do affine transformation.

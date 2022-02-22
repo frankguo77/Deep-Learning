@@ -8,13 +8,20 @@ x_i^s \\
 y_i^s
 \end{pmatrix}
 = \tau_\theta(G_i) =
+A_theta
 \begin{pmatrix}
-1 & 0 \\
-0 & 1
+x_i^t \\
+y_i^t \\
+1
 \end{pmatrix}
+\begin{bmatrix}
+\ttheta_11 & \ttheta_12  & \ttheta_13 \\
+\ttheta_21 & \ttheta_22  & \ttheta_23 
+\end{bmatrix}
 \begin{pmatrix}
-1 & 0 \\
-0 & 1
+x_i^t \\
+y_i^t \\
+1
 \end{pmatrix}
 $$
 # How?

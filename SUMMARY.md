@@ -1,5 +1,5 @@
 # Table of contents
 * [README](README.md)
-## Achitectures
-* [SpatialTransformer](architectureAnalysis/overview.md)
+## Deep Learning
+* [SpatialTransformer](Deeplearning/SpatialTransformer.md)
 

@@ -9,7 +9,7 @@ CNNs are not invariant to rotation and scale and more general affine transformat
 *The sampler
 
 Let's see the three parts one by one.
-## Grid generator
+## Localization network
  General affine transformation:  
  $$ 
 \begin{pmatrix}
@@ -34,7 +34,11 @@ y_i^t \\
 1
 \end{pmatrix}
 $$
+
+The input of the localisation net is a feature map: $\U \in R^{HXWXC}$ 。经过若干卷积或全链接操作后接一个回归层回归输出变换参数θ。θ的维度取决于网络选择的具体变换类型,如选择仿射变换则 [公式] 。如选择投影变换则 [公式] 。θ的值决定了网络选择的空间变换的”幅度大小”。
 First we need to find affine matrix A_\theta. \theta_{11} ~ \theta_{23}. we call this step is: **Grid generator**
+## Grid generator
+
 ## Interpolation
 After we do the affine transformation, by the matrix production. we gone get the decimal coordinates. we can not simply rund them  t integer because it will make  the process differentiable, we need interpolate. 
 <p align="center">

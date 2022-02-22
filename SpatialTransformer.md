@@ -25,22 +25,19 @@ y_i^t \\
 1
 \end{pmatrix}
 $$
-
 The archtecture of STN
-<p align="center">
 ![logo](https://pytorch.org/tutorials/_images/stn-arch.png "STN")
-</p>
--The ocalization Network(regular CNN)
--The grid generator
--The sampler
+- The ocalization Network(regular CNN)
+- The grid generator
+- The sampler
 
 Let's see the three parts one by one.
 ## Localization network
-Find affine matrix $A_\theta$. $\theta_{11}$ ~ $\theta_{23}$.
+Find affine matrix $A_\theta$: $\theta_{11}$ ~ $\theta_{23}$.
  
 
 Input: $U \in R^{HXWXC}$  
-Output:
+Output: $\theta \in R^{2X3}$ (affine) or $\theta \in R^{3X3}$ (project)
 
 
 ## Grid generator
@@ -48,9 +45,7 @@ Do the matrix product to do affine transformation.
 
 ## Interpolation
 After we do the affine transformation, by the matrix production. we gone get the decimal coordinates. we can not simply rund them  t integer because it will make  the process differentiable, we need interpolate. 
-<p align="center">
 ![logo](https://i.imgur.com/wd0Xd2T.png "Interpolation")
-</p>
 
 
 # How?

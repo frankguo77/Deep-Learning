@@ -14,9 +14,10 @@ x_i^t \\
 y_i^t \\
 1
 \end{pmatrix}
+=
 \begin{bmatrix}
-\ttheta_11 & \ttheta_12  & \ttheta_13 \\
-\ttheta_21 & \ttheta_22  & \ttheta_23 
+\theta_{11} & \theta_{12}  & \theta_{13} \\
+\theta_{21} & \theta_{22}  & \theta_{23} 
 \end{bmatrix}
 \begin{pmatrix}
 x_i^t \\
@@ -24,5 +25,8 @@ y_i^t \\
 1
 \end{pmatrix}
 $$
+What we need to find affine matrix A_theta.\theta_{11} ~ \theta_{23}.
+
+
 # How?
 # Implement in Pytorch
